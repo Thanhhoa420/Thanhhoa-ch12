@@ -3,22 +3,19 @@
 <%
     request.setCharacterEncoding("UTF-8");
 %>
-<c:if test="${sqlStatement == null}">
-    <c:set var="sqlStatement" value="SELECT * FROM users" />
-</c:if>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>SQL Gateway</title>
+    <title>SQL Gateway - Lê Ngô Thanh Hoa</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>The SQL Gateway</h1>
+        <h1>SQL Gateway</h1>
         <p>Nhập câu lệnh SQL của bạn và nhấn <b>Execute</b> để chạy.</p>
     </header>
 
@@ -48,7 +45,7 @@
 </div>
 
 <footer>
-    <p>© 2025 SQL Gateway Demo By Thanh Trang</p>
+    <p>© 2025 SQL Gateway Demo by Lê Ngô Thanh Hoa – 23133022</p>
 </footer>
 
 </body>
