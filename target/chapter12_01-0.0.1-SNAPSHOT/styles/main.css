@@ -1,168 +1,74 @@
-/* Reset */
-* {
+body {
+    background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+    font-family: 'Segoe UI', sans-serif;
+    color: #4a148c;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Toàn trang */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #ffe6eb, #f9d3e3);
-    color: #4a2c2c;
-    line-height: 1.6;
-    padding: 40px;
-}
-
-/* Container */
 .container {
-    max-width: 900px;
-    margin: auto;
+    max-width: 800px;
+    margin: 60px auto;
+    background: #f8f0ff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(106, 27, 154, 0.2);
 }
 
-/* Header */
 header {
     text-align: center;
     margin-bottom: 30px;
 }
 
 header h1 {
+    color: #6a1b9a;
     font-size: 2.2rem;
-    color: #c2185b;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin-top: 10px;
-    color: #805161;
-    font-size: 1.05rem;
+    color: #8e24aa;
 }
 
-/* Card */
 .card {
-    background: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
+    background: #ffffff;
+    border: 2px solid #ce93d8;
     border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    border: 1px solid #f8bbd0;
-}
-
-.card h2 {
-    margin-bottom: 15px;
-    color: #d81b60;
-    font-size: 1.3rem;
-}
-
-/* Form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 8px rgba(123, 31, 162, 0.15);
 }
 
 textarea {
-    font-family: monospace;
-    font-size: 0.95rem;
-    border: 1px solid #f4c2d7;
+    width: 100%;
+    height: 120px;
+    border: 2px solid #ba68c8;
     border-radius: 10px;
-    padding: 14px;
-    resize: vertical;
-    min-height: 160px;
-    outline: none;
-    transition: 0.3s;
-}
-
-textarea:focus {
-    border-color: #ec407a;
-    box-shadow: 0 0 0 3px rgba(236, 64, 122, 0.15);
-}
-
-/* Button */
-button {
-    align-self: flex-start;
-    background: #ec407a;
-    color: white;
+    padding: 10px;
+    font-family: monospace;
     font-size: 1rem;
+    background-color: #f3e5f5;
+    color: #4a148c;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8e24aa;
+    color: white;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
-    padding: 12px 22px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #d81b60;
+    background-color: #6a1b9a;
 }
 
-/* SQL Result */
-.sql-result {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #f8bbd0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    font-size: 0.95rem;
-    color: #4a2c2c;
-    overflow-x: auto;
-    max-height: 400px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* Nếu kết quả là bảng */
-.sql-result table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* Header */
-.sql-result th {
-    background: #ec407a;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    text-align: left;
-}
-
-/* Dữ liệu */
-.sql-result td {
-    padding: 10px;
-    border-bottom: 1px solid #f3c1d3;
-}
-
-/* Hàng xen kẽ */
-.sql-result tr:nth-child(even) {
-    background: #fff5f8;
-}
-
-/* Hover */
-.sql-result tr:hover {
-    background: #ffe0eb;
-}
-
-/* Scroll đẹp */
-.sql-result::-webkit-scrollbar {
-    height: 8px;
-}
-.sql-result::-webkit-scrollbar-track {
-    background: #fce4ec;
-    border-radius: 4px;
-}
-.sql-result::-webkit-scrollbar-thumb {
-    background: #ec407a;
-    border-radius: 4px;
-}
-.sql-result::-webkit-scrollbar-thumb:hover {
-    background: #d81b60;
-}
-
-/* Footer */
 footer {
     text-align: center;
+    color: #7b1fa2;
     margin-top: 20px;
-    color: #805161;
     font-size: 0.9rem;
 }
