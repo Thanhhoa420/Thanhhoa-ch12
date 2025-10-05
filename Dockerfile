@@ -6,7 +6,7 @@ FROM tomcat:9.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy file WAR vào Tomcat webapps
-COPY target/sql-gateway-hoa-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/chapter12_01-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port Tomcat
 EXPOSE 8080
